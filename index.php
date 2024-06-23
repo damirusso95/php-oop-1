@@ -1,10 +1,27 @@
 <?php
     // classe
-class movie {
+class Movie {
     // proprietà o variabili d'istanza
-    public $titolo
-    public $genere
-}
+    public $titolo;
+    public $genere;
+
+    public function nomeCompleto() {
+        return "$this->titolo $this->genere";
+
+    }
+
+    }
+
+    $Titanic = new Movie();
+    $Titanic->titolo="Titanic";
+    $Titanic->genere="Drammatico";
+
+    $Lotr = new Movie();
+    $Lotr->titolo="Lord of the rings";
+    $Lotr->genere="Fantasy";
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +35,10 @@ class movie {
 
 
 <h1>hello oop</h1>
-<?php
+<ul>
+    <li><?= $Titanic->nomeCompleto() ?></li> 
+    <li><?= $Lotr->nomeCompleto() ?></li>
+</ul>
 
-?> 
 </body>
 </html>
