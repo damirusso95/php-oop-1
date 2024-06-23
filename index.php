@@ -9,16 +9,21 @@ class Movie {
         return "$this->titolo $this->genere";
 
     }
+    // costruttore della classe
+    public function __construct($titolo, $genere) {
+        $this->titolo = $titolo;
+        $this->genere = $genere;
+    }
 
     }
 
-    $Titanic = new Movie();
-    $Titanic->titolo="Titanic";
-    $Titanic->genere="Drammatico";
+    $Titanic = new Movie("Titanic","Drammatico");
+    // $Titanic->titolo="Titanic";
+    // $Titanic->genere="Drammatico";
 
-    $Lotr = new Movie();
-    $Lotr->titolo="Lord of the rings";
-    $Lotr->genere="Fantasy";
+    $Lotr = new Movie("Lord of the rings","Fantasy");
+    // $Lotr->titolo="Lord of the rings";
+    // $Lotr->genere="Fantasy";
 
 
 
